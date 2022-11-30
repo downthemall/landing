@@ -289,6 +289,13 @@
     <p>If you're still new to DownThemAll!, have a look at our <a href="https://about.downthemall.org/4.0/">Welcome page</a> with some introductory videos.</p>
 
     <h2>Major version changes</h2>
+    <h3>Version 4.6 <em>Nov 30, 2022</em></h3>
+    <ul>
+      <li>Fixed an issue where the download database failed to initialize and therefore DTA failed to work for some Firefox users.</li>
+      <li>Fixed an issue where DTA would not pick up server provided names after a redirect on Firefox</li>
+      <li>Added a work-around for Chrome to reduce the likelihood of DTA conflicting with other addons when it comes to determining download names (best effort, as the entire Chrome API is a bit broken)</li>
+      <li>Fixed an issue where DTA may have failed to import from .meta4 files</li>
+    </ul>
     <h3>Version 4.5 <em>Aug 2, 2022</em></h3>
     <ul>
       <li>Second attempt at fixing the windowing issues across browsers. Both Chrome and Firefox had changed behaviors recently again.</li>
