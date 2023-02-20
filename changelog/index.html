@@ -141,6 +141,18 @@
       filter: grayscale(90%);
     }
 
+    #privacy {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 1em;
+      align-items: center;
+      margin: 0;
+    }
+    #privacy svg {
+      opacity: 0.6;
+      fill: green;
+    }
+
     @media only screen and (max-width: 750px) {
       nav {
         flex-direction: column;
@@ -356,6 +368,20 @@
 
     <h3>Version 4.0 <em>August 31, 2019</em></h3>
     <p>DownThemAll! reborn, as a WebExtension</p>
+
+    <h3>Privacy Notice</h3>
+    <section id="privacy">
+    <svg version="1.1" viewBox="0 0 24 24" width="64" height="64">
+      <path d="M12 23.81h-.11a10.34 10.34 0 0 1-6.67-4c-1.92-2.61-2.7-4.91-3.08-9.12C2 9.24 2 6.28 2 4a2.53 2.53 0 0 1 2.09-2.5L12 .19l7.91 1.35A2.53 2.53 0 0 1 22 4c0 1.83 0 5.12-.14 6.59-.38 4.21-1.16 6.51-3.08 9.12a10.34 10.34 0 0 1-6.67 4zm0-21.6l-7.58 1.3A.54.54 0 0 0 4 4c0 1.8 0 5 .13 6.41.35 3.84 1 5.81 2.7 8.11A8.53 8.53 0 0 0 12 21.79a8.5 8.5 0 0 0 5.17-3.23c1.69-2.3 2.35-4.27 2.7-8.11C20 9.06 20 5.84 20 4a.52.52 0 0 0-.42-.52z"/>
+      <path d="M12 4.57l-5.4.93c0 2 .07 3.58.13 4.33.42 4.59 1.21 5.95 2.45 7.63a5.71 5.71 0 0 0 2.82 2z"/>
+    </svg>
+
+    <div>
+      <p>DownThemAll! does <strong>not</strong> collect any personal information!</p>
+      <p>All information, such as your preferences and downloads, is <em>only</em> stored in your browser - under your full control - and the developers of DownThemAll! do <em>not</em> have access to this information.
+      DownThemAll! is not monetized and does not contain ads. The project is financed by donations, including the time the developers and translators spend on maintaining the project.</p>
+    </div>
+    </section>
   </article>
 
   <footer>
